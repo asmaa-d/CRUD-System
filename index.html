@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CRUD System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body>
+    <div class="crud mt-5">
+        <div class="container shadow  mx-auto pb-5 crudCon">
+            <h1 class="pt-5 pb-3">CRUD SYSTEM</h1>
+            <label for="productName">Product Name :</label>
+            <input id="productName" name="productName" type="text" class="form-control mb-3">
+            <label for="producCategory">Product Category :</label>
+            <input id="producCategory" name="producCategory" type="text" class="form-control mb-3">
+            <label for="productPrice">Product Price :</label>
+            <input id="productPrice" name="productPrice" type="number" class="form-control mb-3">
+            <label for="productDesc">Product Description :</label>
+            <textarea name="productDesc" id="productDesc" class="w-100 form-control mb-4"></textarea>
+            <button class="btn btn-info" id="addBtn">add Product</button>
+            <button onclick="updateData()" class="btn btn-success d-none" id="updateBtn">Update product</button>
+        </div>
+
+        <div class="search">
+            <input onkeyup="searchProduct()" id="searchInp" name="searshInp" type="text" placeholder="search ..." class="w-25 form-control mx-auto mt-5 mb-3">
+        </div>
+
+        <table class="table table-striped w-75 mx-auto mt-5">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

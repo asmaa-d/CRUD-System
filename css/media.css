@@ -1,0 +1,9 @@
+@media screen and (max-width:925px){
+    .crudCon {
+        width: 100% !important;
+    }
+
+    #searchInp{
+        width: 75% !important;
+    }
+}
